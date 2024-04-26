@@ -1,0 +1,2 @@
+DOTNET_STARTUP_PROJECT=src/GestaoDocumentalBff.Api/GestaoDocumentalBff.Api.csproj
+DOTNET_RESTORE_SOURCES=https://api.nuget.org/v3/index.json;/opt/app-root/src/lib/pkg

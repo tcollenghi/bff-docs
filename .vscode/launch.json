@@ -1,0 +1,40 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "GestaoDocumentalBff (web-api)",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "buildapi",
+      "program": "${workspaceFolder}/src/GestaoDocumentalBff.Api/bin/Debug/net6.0/GestaoDocumentalBff.Api.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}/src/GestaoDocumentalBff.Api",
+      "stopAtEntry": false,
+      "internalConsoleOptions": "openOnSessionStart",
+      "launchBrowser": {
+        "enabled": false,
+        "args": "${auto-detect-url}",
+        "windows": {
+          "command": "cmd.exe",
+          "args": "/C start ${auto-detect-url}"
+        },
+        "osx": {
+          "command": "open"
+        },
+        "linux": {
+          "command": "xdg-open"
+        }
+      },
+      "env": {
+        "ASPNETCORE_ENVIRONMENT": "Localhost",
+        "ASPNETCORE_URLS": "https://localhost:5008"
+      }
+    },
+    {
+      "name": "GestaoDocumentalBff (attach)",
+      "type": "coreclr",
+      "request": "attach",
+      "processId": "${command:pickProcess}"
+    }
+  ]
+}

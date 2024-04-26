@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Http" Version="6.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../GestaoDocumentalBff.Domain/GestaoDocumentalBff.Domain.csproj" />
+    <ProjectReference Include="../GestaoDocumentalBff.Application/GestaoDocumentalBff.Application.csproj" />
+    <ProjectReference Include="../GestaoDocumentalBff.CrossCutting/GestaoDocumentalBff.CrossCutting.csproj" />
+
+  </ItemGroup>
+
+  <ItemGroup>
+   <None Update="appsettings.json">
+     <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+   </None>
+</ItemGroup>
+
+</Project>
